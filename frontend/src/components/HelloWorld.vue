@@ -1,9 +1,9 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    <h3 v-for="list in lists" :key="list.id">
+    <!--<h3 v-for="list in lists" :key="list.id">
       {{ list.tagName }}
-    </h3>
+    </h3>-->
   </div>
 </template>
 
@@ -13,14 +13,14 @@ export default {
   data () {
     return {
       msg: 'Welcome to Your Vue.js App',
-      lists: []
+      //lists: []
     }
   },
-  created(){
+  /*created(){
     this.$http.get('/api/tag/list').then(resp => {
       this.lists = resp.data.response
     })
-  }
+  }*/
 }
 </script>
 
